@@ -41,7 +41,7 @@ export default {
   methods: {
     open(link) {
       // this.$electron.shell.openExternal(link);
-      this.$http
+      this.axios
         .get("/public/test/testDict", { params: { m: "prod", a: "list" } })
         .then(res => {
           console.log(res);
