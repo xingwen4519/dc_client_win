@@ -1,0 +1,485 @@
+{
+  "id": "1395587",
+  "name": "医顺达公卫平台",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "7186201",
+      "name": "食物",
+      "font_class": "eat",
+      "unicode": "e709",
+      "unicode_decimal": 59145
+    },
+    {
+      "icon_id": "6908550",
+      "name": "撤销审核",
+      "font_class": "unmake",
+      "unicode": "e7c8",
+      "unicode_decimal": 59336
+    },
+    {
+      "icon_id": "11249100",
+      "name": "审核",
+      "font_class": "audit",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "15415831",
+      "name": "慢病",
+      "font_class": "chronic",
+      "unicode": "e673",
+      "unicode_decimal": 58995
+    },
+    {
+      "icon_id": "4227419",
+      "name": "点",
+      "font_class": "vertical-bar",
+      "unicode": "e61a",
+      "unicode_decimal": 58906
+    },
+    {
+      "icon_id": "5027984",
+      "name": "pdf",
+      "font_class": "pdf",
+      "unicode": "e674",
+      "unicode_decimal": 58996
+    },
+    {
+      "icon_id": "3719701",
+      "name": "撤销",
+      "font_class": "cancel",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    },
+    {
+      "icon_id": "8924087",
+      "name": "拒绝",
+      "font_class": "reject",
+      "unicode": "e6af",
+      "unicode_decimal": 59055
+    },
+    {
+      "icon_id": "7228595",
+      "name": "保存",
+      "font_class": "save",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "12173161",
+      "name": "生成",
+      "font_class": "generate",
+      "unicode": "e86b",
+      "unicode_decimal": 59499
+    },
+    {
+      "icon_id": "4599459",
+      "name": "大于等于符号",
+      "font_class": "gte",
+      "unicode": "e632",
+      "unicode_decimal": 58930
+    },
+    {
+      "icon_id": "4599460",
+      "name": "小于等于符号",
+      "font_class": "lte",
+      "unicode": "e633",
+      "unicode_decimal": 58931
+    },
+    {
+      "icon_id": "4599461",
+      "name": "小于符号",
+      "font_class": "lt",
+      "unicode": "e634",
+      "unicode_decimal": 58932
+    },
+    {
+      "icon_id": "4599462",
+      "name": "大于符号",
+      "font_class": "gt",
+      "unicode": "e635",
+      "unicode_decimal": 58933
+    },
+    {
+      "icon_id": "4599466",
+      "name": "不等于符号",
+      "font_class": "ne",
+      "unicode": "e636",
+      "unicode_decimal": 58934
+    },
+    {
+      "icon_id": "4605489",
+      "name": "或运算符号",
+      "font_class": "or",
+      "unicode": "e639",
+      "unicode_decimal": 58937
+    },
+    {
+      "icon_id": "4605490",
+      "name": "和运算符号",
+      "font_class": "and",
+      "unicode": "e63b",
+      "unicode_decimal": 58939
+    },
+    {
+      "icon_id": "7434461",
+      "name": "删除",
+      "font_class": "back-space",
+      "unicode": "e622",
+      "unicode_decimal": 58914
+    },
+    {
+      "icon_id": "4598251",
+      "name": "左括号",
+      "font_class": "bra-left",
+      "unicode": "e624",
+      "unicode_decimal": 58916
+    },
+    {
+      "icon_id": "4598258",
+      "name": "加号",
+      "font_class": "add",
+      "unicode": "e626",
+      "unicode_decimal": 58918
+    },
+    {
+      "icon_id": "4599457",
+      "name": "减号",
+      "font_class": "sub",
+      "unicode": "e62d",
+      "unicode_decimal": 58925
+    },
+    {
+      "icon_id": "4599464",
+      "name": "除号",
+      "font_class": "divi",
+      "unicode": "e62e",
+      "unicode_decimal": 58926
+    },
+    {
+      "icon_id": "4599465",
+      "name": "乘号",
+      "font_class": "mult",
+      "unicode": "e630",
+      "unicode_decimal": 58928
+    },
+    {
+      "icon_id": "4599469",
+      "name": "右括号",
+      "font_class": "bra-right",
+      "unicode": "e631",
+      "unicode_decimal": 58929
+    },
+    {
+      "icon_id": "2220545",
+      "name": "残疾人员",
+      "font_class": "deformity-round",
+      "unicode": "e7ac",
+      "unicode_decimal": 59308
+    },
+    {
+      "icon_id": "7330048",
+      "name": "残疾人",
+      "font_class": "deformity",
+      "unicode": "eac5",
+      "unicode_decimal": 60101
+    },
+    {
+      "icon_id": "7348404",
+      "name": "心电图，检查，心脏",
+      "font_class": "coronary",
+      "unicode": "e666",
+      "unicode_decimal": 58982
+    },
+    {
+      "icon_id": "5745716",
+      "name": "脑卒中",
+      "font_class": "apoplexy",
+      "unicode": "e642",
+      "unicode_decimal": 58946
+    },
+    {
+      "icon_id": "7966214",
+      "name": "神经内科",
+      "font_class": "ment",
+      "unicode": "e6c4",
+      "unicode_decimal": 59076
+    },
+    {
+      "icon_id": "10973125",
+      "name": "艾滋人员",
+      "font_class": "aidis-round",
+      "unicode": "e621",
+      "unicode_decimal": 58913
+    },
+    {
+      "icon_id": "7571549",
+      "name": "肺癌",
+      "font_class": "pht",
+      "unicode": "e61e",
+      "unicode_decimal": 58910
+    },
+    {
+      "icon_id": "10056199",
+      "name": "医疗",
+      "font_class": "med",
+      "unicode": "e6ef",
+      "unicode_decimal": 59119
+    },
+    {
+      "icon_id": "10056216",
+      "name": "电脑",
+      "font_class": "pc",
+      "unicode": "e6f9",
+      "unicode_decimal": 59129
+    },
+    {
+      "icon_id": "10056219",
+      "name": "医生",
+      "font_class": "dot",
+      "unicode": "e6fa",
+      "unicode_decimal": 59130
+    },
+    {
+      "icon_id": "10056224",
+      "name": "医保",
+      "font_class": "card",
+      "unicode": "e6fe",
+      "unicode_decimal": 59134
+    },
+    {
+      "icon_id": "10056226",
+      "name": "后勤物资",
+      "font_class": "files",
+      "unicode": "e6ff",
+      "unicode_decimal": 59135
+    },
+    {
+      "icon_id": "10056243",
+      "name": "门诊工作量",
+      "font_class": "board",
+      "unicode": "e707",
+      "unicode_decimal": 59143
+    },
+    {
+      "icon_id": "8516508",
+      "name": "待办",
+      "font_class": "todo",
+      "unicode": "e63a",
+      "unicode_decimal": 58938
+    },
+    {
+      "icon_id": "9208821",
+      "name": "艾滋病人员",
+      "font_class": "aids",
+      "unicode": "e62c",
+      "unicode_decimal": 58924
+    },
+    {
+      "icon_id": "8541031",
+      "name": "报告 (1)",
+      "font_class": "report",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "8316373",
+      "name": "儿童",
+      "font_class": "children",
+      "unicode": "e64b",
+      "unicode_decimal": 58955
+    },
+    {
+      "icon_id": "9751546",
+      "name": "精神科",
+      "font_class": "mental",
+      "unicode": "e619",
+      "unicode_decimal": 58905
+    },
+    {
+      "icon_id": "8938712",
+      "name": "孕产妇保健",
+      "font_class": "maternal",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "6776700",
+      "name": "肺结核",
+      "font_class": "phthisis",
+      "unicode": "e695",
+      "unicode_decimal": 59029
+    },
+    {
+      "icon_id": "9162094",
+      "name": "糖尿病随访",
+      "font_class": "diabetes",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "5745706",
+      "name": "老年人",
+      "font_class": "aged",
+      "unicode": "e640",
+      "unicode_decimal": 58944
+    },
+    {
+      "icon_id": "9162093",
+      "name": "高血压随访",
+      "font_class": "hyper",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "1889044",
+      "name": "搜索用户",
+      "font_class": "find-person",
+      "unicode": "e62f",
+      "unicode_decimal": 58927
+    },
+    {
+      "icon_id": "9336940",
+      "name": "查询",
+      "font_class": "search",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "9981006",
+      "name": "new",
+      "font_class": "new",
+      "unicode": "e69a",
+      "unicode_decimal": 59034
+    },
+    {
+      "icon_id": "7200362",
+      "name": "公共卫生服务",
+      "font_class": "health",
+      "unicode": "e615",
+      "unicode_decimal": 58901
+    },
+    {
+      "icon_id": "6426173",
+      "name": "医疗",
+      "font_class": "medical-point",
+      "unicode": "e623",
+      "unicode_decimal": 58915
+    },
+    {
+      "icon_id": "7350073",
+      "name": "医疗",
+      "font_class": "medical",
+      "unicode": "e662",
+      "unicode_decimal": 58978
+    },
+    {
+      "icon_id": "8222922",
+      "name": "心脏",
+      "font_class": "heart",
+      "unicode": "e62b",
+      "unicode_decimal": 58923
+    },
+    {
+      "icon_id": "7571569",
+      "name": "糖尿病",
+      "font_class": "glycuresis",
+      "unicode": "e625",
+      "unicode_decimal": 58917
+    },
+    {
+      "icon_id": "2371345",
+      "name": "孕妇",
+      "font_class": "gravida",
+      "unicode": "e680",
+      "unicode_decimal": 59008
+    },
+    {
+      "icon_id": "2562418",
+      "name": "脑癌",
+      "font_class": "brain",
+      "unicode": "e629",
+      "unicode_decimal": 58921
+    },
+    {
+      "icon_id": "6260807",
+      "name": "儿童",
+      "font_class": "child",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "7350071",
+      "name": "老年人",
+      "font_class": "old",
+      "unicode": "e661",
+      "unicode_decimal": 58977
+    },
+    {
+      "icon_id": "7571554",
+      "name": "高血压",
+      "font_class": "hypertension",
+      "unicode": "e620",
+      "unicode_decimal": 58912
+    },
+    {
+      "icon_id": "5809209",
+      "name": "提示",
+      "font_class": "tips",
+      "unicode": "e697",
+      "unicode_decimal": 59031
+    },
+    {
+      "icon_id": "2070656",
+      "name": "nav-系统设置",
+      "font_class": "sysset",
+      "unicode": "e6ee",
+      "unicode_decimal": 59118
+    },
+    {
+      "icon_id": "1008481",
+      "name": "退出",
+      "font_class": "exit",
+      "unicode": "e688",
+      "unicode_decimal": 59016
+    },
+    {
+      "icon_id": "287164",
+      "name": "注册登录-用户名",
+      "font_class": "user",
+      "unicode": "e62a",
+      "unicode_decimal": 58922
+    },
+    {
+      "icon_id": "1327085",
+      "name": "密码",
+      "font_class": "pwd",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "4237398",
+      "name": "体检信息",
+      "font_class": "checkup",
+      "unicode": "e638",
+      "unicode_decimal": 58936
+    },
+    {
+      "icon_id": "7122146",
+      "name": "档案",
+      "font_class": "file",
+      "unicode": "e76a",
+      "unicode_decimal": 59242
+    },
+    {
+      "icon_id": "7119846",
+      "name": "首页",
+      "font_class": "index",
+      "unicode": "e73d",
+      "unicode_decimal": 59197
+    }
+  ]
+}
