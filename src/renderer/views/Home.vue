@@ -11,6 +11,7 @@
         </div>
         <el-button type="primary">启动监测</el-button>
         <el-button>停止监测</el-button>
+        <el-button @click="showNotice">展示通知</el-button>
       </el-row>
     </el-card>
   </div>
@@ -39,10 +40,37 @@ export default {
         .catch(() => {
           console.log("cancel logout");
         });
+    },
+    showNotice() {
+      // const { Notification } = remote;
+      // console.log(Notification.isSupported());
+      const myNotification = new window.Notification("Title", {
+        body: "Notification from the Renderer process"
+      });
+      // myNotification.show();
+      const notifier = require('node-notifier');
+      notifier.notify({
+          title: 'My awesome title',
+          message: 'Hello from node, Mr. User!',
+          // icon: path.join(__dirname, 'coulson.jpg'), // Absolute path (doesn't work on balloons)
+          sound: true, // Only Notification Center or Windows Toasters
+          wait: true // Wait with callback, until user action is taken against notification, does not apply to Windows Toasters as they always wait or  notify-send as it does not support the wait option
+        },
+        function (err, response, metadata) {
+          // Response is response from notification
+          // Metadata contains activationType, activationAt, deliveredAt
+        }
+      );
     }
   },
   created() {
     this.userInfo.name = this.$store.state.userInfo.realname;
+  },
+  mounted() {
+    // console.log(1);
+    // const myNotification = new Notification("Title", {
+    //   body: "Notification from the Renderer process"
+    // });
   }
 };
 </script>
