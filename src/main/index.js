@@ -32,7 +32,7 @@ function createWindow() {
     mainWindow = null
   });
 
-  // app.setUserModelId("com.dc.win");
+  app.setAppUserModelId("com.dc.win");
 }
 
 app.on('ready', createWindow)
