@@ -29,7 +29,6 @@ router.beforeEach((to, from, next) => {
     next();
   } else {
     const token = localStorage.getItem('token');
-    console.log(token);
     if (!token) {
       next('/login');
     } else {
