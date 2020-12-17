@@ -117,9 +117,9 @@ export default {
             username: this.loginForm.username,
             password: this.loginForm.password
           })
-          .then((res) => {
+          .then(res => {
             if (res.status.code === 1) {
-              this.setToken(res.data.token);
+              this.$store.dispatch("setToken", res.data.token);
               const user = {
                 id: res.data.user.id,
                 realname: res.data.user.realname,
@@ -135,16 +135,16 @@ export default {
                 hisNo: res.data.user.hisNo,
                 lisNo: res.data.user.lisNo
               };
-              this.setUserInfo(user);
+              this.$store.dispatch("setUserInfo", user);
               //缓存保存用户名密码
               if (this.loginForm.remPwd) {
-                this.setRemUser({
+                this.$store.dispatch("setRemUser", {
                   username: this.loginForm.username,
                   password: this.loginForm.password,
                   remPwd: true
                 });
               } else {
-                this.setRemUser({
+                this.$store.dispatch("setRemUser", {
                   username: "",
                   password: "",
                   remPwd: false

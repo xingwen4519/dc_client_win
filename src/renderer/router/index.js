@@ -3,12 +3,11 @@ import Router from 'vue-router'
 
 Vue.use(Router)
 
-const router =  new Router({
-  routes: [
-    {
+const router = new Router({
+  routes: [{
       path: '/login',
       name: 'login',
-      component: require('@/views/Login').default
+      component: () => import('@/views/Login.vue')
     },
     {
       path: '/',
@@ -30,6 +29,7 @@ router.beforeEach((to, from, next) => {
     next();
   } else {
     const token = localStorage.getItem('token');
+    console.log(token);
     if (!token) {
       next('/login');
     } else {

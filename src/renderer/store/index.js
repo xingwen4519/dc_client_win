@@ -1,22 +1,29 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 
-import { createPersistedState, createSharedMutations } from 'vuex-electron'
+import {
+  createPersistedState,
+  // createSharedMutations
+} from 'vuex-electron'
 
-Vue.use(Vuex)
+Vue.use(Vuex);
+
 
 export default new Vuex.Store({
   plugins: [
     createPersistedState(),
-    createSharedMutations()
+    // createSharedMutations()
   ],
   strict: process.env.NODE_ENV !== 'production',
   state: {
-    // 用户登录信息
-    token: localStorage.getItem('token') || '',
-    userInfo: JSON.parse(localStorage.getItem('userInfo')) || null,
-    //记住用户名密码
-    remUser: JSON.parse(localStorage.getItem('remUser')) || null,
+    // // 用户登录信息
+    // token: localStorage.getItem('token') || '',
+    // userInfo: JSON.parse(localStorage.getItem('userInfo')) || null,
+    // //记住用户名密码
+    // remUser: JSON.parse(localStorage.getItem('remUser')) || null,
+    token: '',
+    userInfo: null,
+    remUser: null
   },
   mutations: {
     //记住密码
@@ -28,26 +35,34 @@ export default new Vuex.Store({
     },
     setToken(state, token) {
       state.token = token;
-    },
+    }
   },
   actions: {
-    setRemUser({ commit }, remUser) {
+    setRemUser({
+      commit
+    }, remUser) {
       localStorage.setItem('remUser', JSON.stringify(remUser));
       commit('setRemUser', remUser);
     },
-    setUserInfo({ commit }, userInfo) {
+    setUserInfo({
+      commit
+    }, userInfo) { 
       localStorage.setItem('userInfo', JSON.stringify(userInfo));
       commit('setUserInfo', userInfo);
     },
-    setToken({ commit }, token) {
+    setToken({
+      commit
+    }, token) {
       localStorage.setItem('token', token);
       commit('setToken', token);
     },
-    setSignOut({ commit }) {
+    setSignOut({
+      commit
+    }) {      
       localStorage.removeItem('token');
-      commit('setToken', '');
       localStorage.removeItem('userInfo');
-      commit('setUserInfo', '');     
+      commit('setToken', '');
+      commit('setUserInfo', '');
     },
   }
 })
