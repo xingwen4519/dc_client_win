@@ -44,10 +44,33 @@ export default {
     showNotice() {
       // const { Notification } = remote;
       //console.log(Notification.isSupported());
-      const myNotification = new Notification("Title", {
-        body:
-          "<div style='font-size:20px;'>aa</div>"
+      const { BrowserWindow, Menu, Tray } = require("electron").remote;
+      const win = new BrowserWindow({
+        width: 100,
+        height: 200,
+        autoHideMenuBar: true,
+        resizable: true,
+        title: "将应用程序添加至系统托盘"
       });
+      
+      // const { BrowserWindow } = require("electron").remote;
+      // const win = new BrowserWindow({ width: 800, height: 600, frame: false });
+      // win.show();
+
+      const myNotification = new Notification("Title", {
+        body: "<div style='font-size:20px;'>aa</div>"
+      });
+
+      const { dialog } = require("electron").remote;
+      dialog
+        .showMessageBox({
+          type: "warning",
+          title: "弹出框标题",
+          message: "弹出框内容",
+          detail: "弹出框附加内容,字体大小小一号",
+          buttons: ["按钮名字1", "按钮名字2", "按钮名字3"]
+        })
+        .then(res => {});
     }
   },
   created() {
