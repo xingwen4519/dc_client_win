@@ -2,8 +2,13 @@
   <div id="home">
     <el-card shadow="hover" class="box-card">
       <div slot="header" class="clearfix">
-        <span>您好：【{{userInfo.name}}】，欢迎使用公卫监测系统</span>
-        <el-button style="float: right; padding: 3px 0" type="text" @click="signOut">退出</el-button>
+        <span>您好：【{{ userInfo.name }}】，欢迎使用公卫监测系统</span>
+        <el-button
+          style="float: right; padding: 3px 0"
+          type="text"
+          @click="signOut"
+          >退出</el-button
+        >
       </div>
       <el-row>
         <div class="status">
@@ -42,45 +47,24 @@ export default {
         });
     },
     showNotice() {
-      // const { Notification } = remote;
-      //console.log(Notification.isSupported());
-      const { BrowserWindow, Menu, Tray } = require("electron").remote;
+      const { BrowserWindow, screen } = require("electron").remote;
+      const screenSize = screen.getPrimaryDisplay().workAreaSize;
       const win = new BrowserWindow({
         width: 100,
         height: 200,
         autoHideMenuBar: true,
         resizable: true,
-        title: "将应用程序添加至系统托盘"
+        title: "将应用程序添加至系统托盘",
+        x: screenSize.width - 135,
+        y: screenSize.height - 200
       });
-      
-      // const { BrowserWindow } = require("electron").remote;
-      // const win = new BrowserWindow({ width: 800, height: 600, frame: false });
-      // win.show();
-
-      const myNotification = new Notification("Title", {
-        body: "<div style='font-size:20px;'>aa</div>"
-      });
-
-      const { dialog } = require("electron").remote;
-      dialog
-        .showMessageBox({
-          type: "warning",
-          title: "弹出框标题",
-          message: "弹出框内容",
-          detail: "弹出框附加内容,字体大小小一号",
-          buttons: ["按钮名字1", "按钮名字2", "按钮名字3"]
-        })
-        .then(res => {});
+      const windowsHref = window.location.href;
+      const locationURL = windowsHref.substring(0, windowsHref.indexOf("#") + 1);
+      win.loadURL(locationURL + "/warning?id=001");
     }
   },
   created() {
     this.userInfo.name = this.$store.state.userInfo.realname;
-  },
-  mounted() {
-    // console.log(1);
-    // const myNotification = new Notification("Title", {
-    //   body: "Notification from the Renderer process"
-    // });
   }
 };
 </script>

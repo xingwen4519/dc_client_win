@@ -5,6 +5,10 @@ Vue.use(Router)
 
 const router = new Router({
   routes: [{
+      path: '/warning',
+      name: 'warning',
+      component: () => import('@/views/Warning.vue')
+    }, {
       path: '/login',
       name: 'login',
       component: () => import('@/views/Login.vue')
