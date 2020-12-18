@@ -180,7 +180,8 @@ if (process.env.NODE_ENV === 'production') {
     }]),
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': '"production"',
-      'process.env.VUE_APP_URL': '"http://39.98.157.248:5004"',
+      // 'process.env.VUE_APP_URL': '"http://39.98.157.248:5004"',
+      'process.env.VUE_APP_URL': '"http://localhost:5004"',
       'process.env.VUE_APP_PRINT_URL': '"http://39.98.157.248:101"'
     }),
     new webpack.LoaderOptionsPlugin({

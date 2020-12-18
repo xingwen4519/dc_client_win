@@ -61,8 +61,8 @@ function createWindow() {
   }];
 
   //系统托盘图标目录
-  var trayIcon = path.join(__dirname, "../renderer/assets");
-  var appTray = new Tray(path.join(trayIcon, "app.ico"));
+  // var trayIcon = path.join(__dirname, "../../static");
+  var appTray = new Tray(path.join(__static, "app.ico"));
   //图标的上下文菜单
   const contextMenu = Menu.buildFromTemplate(trayMenuTemplate);
   //设置此托盘图标的悬停提示内容
