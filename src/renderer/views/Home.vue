@@ -83,7 +83,7 @@ export default {
     },
     //建立消息通信
     createSocket() {
-      this.socketIO = Socket.io(process.env.VUE_APP_URL, {
+      this.socketIO = Socket.io(process.env.APP_SERVER_URL, {
         forceNew: true,
         reconnectionAttempts: 100,
         timeout: 10000,

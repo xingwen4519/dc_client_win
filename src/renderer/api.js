@@ -1,6 +1,6 @@
 import Axios from 'axios';
 
-Axios.defaults.baseURL = process.env.VUE_APP_URL;
+Axios.defaults.baseURL = process.env.APP_SERVER_URL;
 Axios.defaults.timeout = 10000;
 
 // 添加一个请求拦截器

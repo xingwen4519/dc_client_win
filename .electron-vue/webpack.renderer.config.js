@@ -158,9 +158,8 @@ if (process.env.NODE_ENV !== 'production') {
   rendererConfig.plugins.push(
     new webpack.DefinePlugin({
       '__static': `"${path.join(__dirname, '../static').replace(/\\/g, '\\\\')}"`,
-      'process.env.VUE_APP_URL': '"http://localhost:5004"',
-      'process.env.VUE_APP_PRINT_URL': '"http://39.98.157.248:101"'
-
+      'process.env.APP_SERVER_URL': '"http://localhost:5004"',
+      'process.env.APP_WEB_URL': '"http://localhost:8080"'
     })
   )
 }
@@ -180,9 +179,8 @@ if (process.env.NODE_ENV === 'production') {
     }]),
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': '"production"',
-      // 'process.env.VUE_APP_URL': '"http://39.98.157.248:5004"',
-      'process.env.VUE_APP_URL': '"http://localhost:5004"',
-      'process.env.VUE_APP_PRINT_URL': '"http://39.98.157.248:101"'
+      'process.env.APP_SERVER_URL': '"http://localhost:5004"',
+      'process.env.APP_WEB_URL': '"http://localhost:8080"'
     }),
     new webpack.LoaderOptionsPlugin({
       minimize: true
